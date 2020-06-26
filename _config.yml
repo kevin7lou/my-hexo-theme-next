@@ -121,15 +121,15 @@ menu:
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
-  sitemap: /sitemap.xml || fa fa-sitemap
-  Wiki: /wiki/ || fa fa-wikipedia-w
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  Wiki: /wiki/ || fab fa-wikipedia-w
   #schedule: /schedule/ || fa fa-calendar
   #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -139,8 +139,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -181,7 +181,8 @@ social:
   GitHub: https://github.com/kevin7lou || fab fa-github
   LinkedIn: https://github.com/yourname || fab fa-linkedin
   知乎: https://github.com/yourname || fab fa-zhihu
-  B站: https://github.com/yourname || fab fa-youtube
+  bilibili: https://github.com/yourname || fab fa-youtube
+  RSS: /atom.xml || fa fa-rss
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
@@ -194,7 +195,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -278,9 +279,10 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  Twitter: https://twitter.com/username || fab fa-twitter
+  #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
   WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  Zhihu: https://github.com/yourname || fab fa-zhihu
   RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
@@ -358,7 +360,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night
+  highlight_theme: galactic
   # Add copy button on codeblock
   copy_button:
     enable: true
@@ -376,7 +378,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -393,7 +395,7 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: true
+  enable: false
   permalink: https://github.com/kevin7lou
   title: Follow me on GitHub
 
@@ -520,7 +522,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
@@ -570,7 +572,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
