@@ -121,7 +121,7 @@ menu:
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  sitemap: /sitemap.xml || fa fa-sitemap
   Wiki: /wiki/ || fab fa-wikipedia-w
   #schedule: /schedule/ || fa fa-calendar
   #commonweal: /404/ || fa fa-heartbeat
