@@ -121,8 +121,8 @@ menu:
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
-  sitemap: /sitemap.xml || fa fa-sitemap
   Wiki: /wiki/ || fab fa-wikipedia-w
+  #sitemap: /sitemap.xml || fa fa-sitemap
   #schedule: /schedule/ || fa fa-calendar
   #commonweal: /404/ || fa fa-heartbeat
 
@@ -179,9 +179,10 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/kevin7lou || fab fa-github
-  LinkedIn: https://github.com/yourname || fab fa-linkedin
-  知乎: https://github.com/yourname || fab fa-zhihu
-  bilibili: https://github.com/yourname || fab fa-youtube
+  知乎: https://www.zhihu.com/people/emmaus3 || fab fa-zhihu
+  语雀:  https://www.yuque.com/kevin7lou/fwny8c || fas fa-feather-alt
+  #LinkedIn: https://github.com/yourname || fab fa-linkedin
+  bilibili: https://space.bilibili.com/2557989 || fab fa-youtube
   RSS: /atom.xml || fa fa-rss
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
@@ -215,7 +216,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -795,7 +796,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: modern
+  style: flat
   icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -804,7 +805,7 @@ note:
 # Tabs tag
 tabs:
   transition:
-    tabs: false
+    tabs: true
     labels: true
 
 # PDF tag
@@ -855,7 +856,7 @@ pace:
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: loading-bar
+  theme: minimal
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
